@@ -1,0 +1,28 @@
+nav{
+    ul{
+        color: $colorThree;
+        font-family:'Raleway', sans-serif;
+        font-weight: 500;
+        font-size:$textMd;
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        background-color: $BgColor;
+        padding: 5px;
+    }
+}
+
+
+.nav-inicio{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.nav-inicio{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+}

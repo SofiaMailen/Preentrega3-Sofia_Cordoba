@@ -1,0 +1,29 @@
+.productos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+        .productos{
+                
+            figure{
+                width: 33%;
+                border-radius: 4px;
+                border: solid whitesmoke 1px;
+                
+                p{
+                    font-size: $textSm;
+                    line-height: $textMd;
+                    margin-top: 15px;
+                    
+                    
+                }
+                figcaption{
+                    color: whitesmoke;
+                    font-size: $textLg;
+                    margin-top: 10px;
+                }
+            }
+
+        } 

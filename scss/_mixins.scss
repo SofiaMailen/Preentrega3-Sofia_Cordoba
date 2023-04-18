@@ -1,0 +1,25 @@
+@mixin textos ($size,$line,$color){
+    font-size: $size;
+    line-height: $line;
+    color: $color;
+    font-family: $mainFont;
+}
+
+@mixin flex ($direction,$justify,$align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: center;
+}
+
+@mixin flex-row(){
+    display: flex;
+    flex-direction: row;
+}
+
+$paleta:(
+    'uno':red,
+    'dos':white,
+    'tres':whitesmoke,
+    'cuatro':black,
+)

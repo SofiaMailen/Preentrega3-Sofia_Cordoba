@@ -1,0 +1,55 @@
+//imports 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,100;1,900&display=swap');
+@import "_vars";
+@import "_mixins";
+@import "_nav";
+@import "_header";
+@import "_productos";
+
+
+
+.tamano-img-tel{
+    width: 50px;
+    height: auto;
+    position:relative;
+}
+
+
+.tamano-map{
+    width: 300px;
+    height: 300px;
+    position:relative;
+}
+
+.tamano-logo-rss{
+    width: 100px;
+    height: auto;
+    position:relative;
+    left: 0;
+}
+
+.tamano-img-login{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    left: 700px;
+    top:-330px;
+}
+
+.color-rss{
+    color: $colorThree;
+}
+
+.tamano-img-auris{
+    width: 10px;
+    height: 10px;
+    position: relative;
+    left:0;
+}
+
+.tamano-img-auris-dos{
+    width:10px;
+    height:auto;
+    position: relative;
+    left:300px;
+}

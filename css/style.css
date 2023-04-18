@@ -1,0 +1,304 @@
+@charset "UTF-8";
+/* Error: Parentheses aren't allowed in plain CSS.
+ *     ,
+ * 200 |                     grid-template-rows: (4,20vh);
+ *     |                                         ^
+ *     '
+ *   css\style.css 200:41  root stylesheet */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Parentheses aren't allowed in plain CSS.\a     ╷\a 200 │                     grid-template-rows: (4,20vh);\d\a     │                                         ^\a     ╵\a   css\\style.css 200:41  root stylesheet";
+}
+
+/*# sourceMappingURL=main.scss.map */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,100;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+nav
+ul{
+    color:white;
+    font-family:'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 1.2em;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(226, 223, 223, 100);
+    padding: 5px
+    
+}
+
+nav
+ul
+li{
+    display: flex;
+    margin-left: 30px;
+}
+
+h1{
+font-family: 'Raleway', sans-serif;
+font-weight: 1,100;
+font-size: 2.8em;
+}
+
+h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 1.900;
+    font-size: 1.5em;
+}
+
+h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+h4{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+p{
+    color: grey;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 1.1em;
+    line-height: 1.3em;
+}
+
+
+
+main
+a
+img{
+width: 300px;
+height: 250px;
+position: relative;
+padding: 10px;
+}
+
+body{
+    background-image: url(../img/background-seis.png);
+}
+header
+a
+img{
+    width: 100%;
+    height: 300px;
+}
+
+
+.contenedor-portada{
+    width: 100%;
+    height: 300px;}
+
+
+.text-left{
+    text-align: left;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.bg-red{
+margin-left: 10px;
+width: 30%;
+background-color: rgb(255,0,0, 0.5);
+text-align: center;
+padding: 0.10%;
+}
+
+.bg-red-dos{
+    margin-left: 650px;
+    width: 50%;
+    background-color: rgb(255,0,0, 0.5);
+    text-align: center;
+    padding: 0.2%;
+    }
+    
+
+.bg-nav{
+    background-color:rgba(255, 255, 255, 0.5);
+}
+
+
+.nav-inicio{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.tamano-img-tel{
+    width: 50px;
+    height: auto;
+    position:relative;
+}
+
+
+.tamano-map{
+    width: 300px;
+    height: 300px;
+    position:relative;
+}
+
+.tamano-logo-rss{
+    width: 100px;
+    height: auto;
+    position:relative;
+    left: 0;
+}
+
+.tamano-img-login{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    left: 700px;
+    top:-330px;
+}
+
+.color-rss{
+    color: white;
+}
+
+.tamano-img-auris{
+    width: 10px;
+    height: 10px;
+    position: relative;
+    left:0;
+}
+
+.tamano-img-auris-dos{
+    width:10px;
+    height:auto;
+    position: relative;
+    left:300px;
+}
+
+
+
+.productos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+        .productos figure{
+            width: 33%;
+            border-radius: 4px;
+            border: solid whitesmoke 1px;
+        }
+
+            .productos figure p {
+                font-size: 1rem;
+                line-height: 1.5rem;
+                margin-top: 15px;
+            }
+
+                .productos figure figcaption{
+                    color: whitesmoke;
+                    font-size: 2.3rem;
+                    margin-top: 10px;
+                }
+
+                #contenedor-grid{
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: (4,20vh);
+                    grid-template-areas: 
+                    "nav"
+                    "header" 
+                    "main" 
+                    ;
+                }
+     
+
+                .one{
+                    
+                    grid-area:nav;
+                }
+                
+                .two{
+                    grid-area:header;
+                }
+                
+                .three{
+                    
+                    grid-area:main;
+                }
+                
+                .four{
+                    
+                    grid-area:producto-uno;
+                }
+
+                .five{
+                    
+                    grid-area:producto-dos;
+                }
+
+                .six{
+                    
+                    grid-area:producto-tres;
+                }
+
+                .seven{
+                    
+                    grid-area:producto-cuatro;
+                }
+
+                .eight{
+                    
+                    grid-area:producto-cinco;
+                }
+                .nine{
+                    
+                    grid-area:producto-seis;
+                }
+                
+                
+                header a img{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 350px
+                }
+                
+                
+                 /* 1er breakpoint */
+                @media (min-width:768px){
+                    
+                    #contenedor-grid{
+                        grid-template-columns:repeat(2,1fr);
+                        grid-template-areas: 
+                        "nav"
+                        "header"
+                        "main";
+                    }
+                
+                }
+                
+                
+                /* 2do breakpoint */
+                @media (min-width:1200px){
+                    #contenedor-grid{
+                        grid-template-columns: 25vw 40vw 40vw;
+                        grid-template-areas: 
+                        "nav nav nav" 
+                        "header header header" 
+                        "main main main";
+                    }
+                } 
